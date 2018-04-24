@@ -1,6 +1,5 @@
 package main;
 
-
 import sql.Connect;
 
 public class Main {

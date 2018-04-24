@@ -26,19 +26,18 @@ public class Connect  {
                 System.out.println("______________");
             }
             System.out.println("Запрос виконаний!");
-
-
-
-        } catch (SQLException sqlEx) {
-            sqlEx.printStackTrace();
-        } finally {
-            //close connection ,stmt and resultset here
-            try { conn.close(); } catch(SQLException se) { /*can't do anything */ }
-            try { stmt.close(); } catch(SQLException se) { /*can't do anything */ }
         }
+        catch (SQLException sqlEx) {
+            sqlEx.printStackTrace();
+        }
+        finally {
+            //close connection ,stmt and resultset here
+            try { conn.close(); } catch(SQLException se) {}
+            try { stmt.close(); } catch(SQLException se) {}
+}
     }
 
 
 
 
-}
+            }
